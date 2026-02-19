@@ -1,0 +1,203 @@
+Buchungsdatum;Konto;Kontobezeichnung;Gegenkonto;Buchungstext;Betrag;Waehrung;Belegnummer
+02.01.2024;4000;Umsatzerloese Naechtigung;2800;Naechtigung Jaenner Teil 1;-185420,00;EUR;RE-2024-001
+05.01.2024;4010;Umsatzerloese Halbpension;2800;Halbpension Jaenner;-62300,50;EUR;RE-2024-002
+07.01.2024;4020;Umsatzerloese Wellness/Spa;2800;Wellness Einnahmen Jaenner;-28750,00;EUR;RE-2024-003
+10.01.2024;4030;Umsatzerloese Seminarraeume;2800;Seminarraum Vermietung;-12400,00;EUR;RE-2024-004
+12.01.2024;4040;Umsatzerloese Skiverleih;2800;Skiverleih Winterpaket;-8920,00;EUR;RE-2024-005
+15.01.2024;5000;Wareneinsatz Lebensmittel;3300;Metro Grosseinkauf KW2;18420,30;EUR;ER-2024-001
+17.01.2024;5000;Wareneinsatz Lebensmittel;3300;Transgourmet Frischware;12680,00;EUR;ER-2024-002
+20.01.2024;5010;Wareneinsatz Getraenke;3300;Stiegl Getraenkelieferung;8340,00;EUR;ER-2024-003
+22.01.2024;5010;Wareneinsatz Getraenke;3300;Wein aus Burgenland;4210,00;EUR;ER-2024-004
+25.01.2024;5020;Wareneinsatz Reinigung;3300;Hollu Reinigungsmittel;3890,50;EUR;ER-2024-005
+28.01.2024;5030;Wareneinsatz Bettwaesche/Textil;3300;Salesianer Waesche;6720,00;EUR;ER-2024-006
+31.01.2024;6000;Stromkosten;3310;Salzburg AG Strom Jaenner;14280,00;EUR;ER-2024-007
+31.01.2024;6000;Stromkosten;3310;Salzburg AG Strom Feb;13940,00;EUR;ER-2024-008
+28.02.2024;6000;Stromkosten;3310;Salzburg AG Strom Maerz;12100,00;EUR;ER-2024-009
+31.03.2024;6000;Stromkosten;3310;Salzburg AG Strom April;9870,00;EUR;ER-2024-010
+30.04.2024;6000;Stromkosten;3310;Salzburg AG Strom Mai;8320,00;EUR;ER-2024-011
+31.05.2024;6000;Stromkosten;3310;Salzburg AG Strom Juni;7650,00;EUR;ER-2024-012
+30.06.2024;6000;Stromkosten;3310;Salzburg AG Strom Juli;9410,00;EUR;ER-2024-013
+31.07.2024;6000;Stromkosten;3310;Salzburg AG Strom August;9820,00;EUR;ER-2024-014
+31.08.2024;6000;Stromkosten;3310;Salzburg AG Strom Sept;8270,00;EUR;ER-2024-015
+30.09.2024;6000;Stromkosten;3310;Salzburg AG Strom Okt;10440,00;EUR;ER-2024-016
+31.10.2024;6000;Stromkosten;3310;Salzburg AG Strom Nov;12870,00;EUR;ER-2024-017
+30.11.2024;6000;Stromkosten;3310;Salzburg AG Strom Dez;15230,00;EUR;ER-2024-018
+05.01.2024;6010;Gaskosten Heizung;3310;Salzburg AG Erdgas Jaenner;22450,00;EUR;ER-2024-019
+05.02.2024;6010;Gaskosten Heizung;3310;Salzburg AG Erdgas Feb;21380,00;EUR;ER-2024-020
+05.03.2024;6010;Gaskosten Heizung;3310;Salzburg AG Erdgas Maerz;18970,00;EUR;ER-2024-021
+05.04.2024;6010;Gaskosten Heizung;3310;Salzburg AG Erdgas April;12340,00;EUR;ER-2024-022
+05.05.2024;6010;Gaskosten Heizung;3310;Salzburg AG Erdgas Mai;5890,00;EUR;ER-2024-023
+05.06.2024;6010;Gaskosten Heizung;3310;Salzburg AG Erdgas Juni;3210,00;EUR;ER-2024-024
+05.07.2024;6010;Gaskosten Heizung;3310;Salzburg AG Erdgas Juli;2870,00;EUR;ER-2024-025
+05.08.2024;6010;Gaskosten Heizung;3310;Salzburg AG Erdgas Aug;2650,00;EUR;ER-2024-026
+05.09.2024;6010;Gaskosten Heizung;3310;Salzburg AG Erdgas Sept;4780,00;EUR;ER-2024-027
+05.10.2024;6010;Gaskosten Heizung;3310;Salzburg AG Erdgas Okt;9870,00;EUR;ER-2024-028
+05.11.2024;6010;Gaskosten Heizung;3310;Salzburg AG Erdgas Nov;16420,00;EUR;ER-2024-029
+05.12.2024;6010;Gaskosten Heizung;3310;Salzburg AG Erdgas Dez;23560,00;EUR;ER-2024-030
+15.01.2024;6020;Fernwaerme;3310;Stadtwerke Fernwaerme Q1;4560,00;EUR;ER-2024-031
+15.04.2024;6020;Fernwaerme;3310;Stadtwerke Fernwaerme Q2;2180,00;EUR;ER-2024-032
+15.07.2024;6020;Fernwaerme;3310;Stadtwerke Fernwaerme Q3;890,00;EUR;ER-2024-033
+15.10.2024;6020;Fernwaerme;3310;Stadtwerke Fernwaerme Q4;3720,00;EUR;ER-2024-034
+03.01.2024;6030;Heizoel;3320;Heizoel Extra Leicht 5000l;7850,00;EUR;ER-2024-035
+15.03.2024;6030;Heizoel;3320;Heizoel Extra Leicht 5000l;7620,00;EUR;ER-2024-036
+10.10.2024;6030;Heizoel;3320;Heizoel Extra Leicht 8000l;12530,00;EUR;ER-2024-037
+10.01.2024;6100;Mietaufwand Gebaeude;3300;Pacht Hotelgebaeude Jaenner;18500,00;EUR;ER-2024-038
+10.02.2024;6100;Mietaufwand Gebaeude;3300;Pacht Hotelgebaeude Feb;18500,00;EUR;ER-2024-039
+10.03.2024;6100;Mietaufwand Gebaeude;3300;Pacht Hotelgebaeude Maerz;18500,00;EUR;ER-2024-040
+10.04.2024;6100;Mietaufwand Gebaeude;3300;Pacht Hotelgebaeude April;18500,00;EUR;ER-2024-041
+10.05.2024;6100;Mietaufwand Gebaeude;3300;Pacht Hotelgebaeude Mai;18500,00;EUR;ER-2024-042
+10.06.2024;6100;Mietaufwand Gebaeude;3300;Pacht Hotelgebaeude Juni;18500,00;EUR;ER-2024-043
+10.07.2024;6100;Mietaufwand Gebaeude;3300;Pacht Hotelgebaeude Juli;18500,00;EUR;ER-2024-044
+10.08.2024;6100;Mietaufwand Gebaeude;3300;Pacht Hotelgebaeude Aug;18500,00;EUR;ER-2024-045
+10.09.2024;6100;Mietaufwand Gebaeude;3300;Pacht Hotelgebaeude Sept;18500,00;EUR;ER-2024-046
+10.10.2024;6100;Mietaufwand Gebaeude;3300;Pacht Hotelgebaeude Okt;18500,00;EUR;ER-2024-047
+10.11.2024;6100;Mietaufwand Gebaeude;3300;Pacht Hotelgebaeude Nov;18500,00;EUR;ER-2024-048
+10.12.2024;6100;Mietaufwand Gebaeude;3300;Pacht Hotelgebaeude Dez;18500,00;EUR;ER-2024-049
+15.01.2024;6110;Betriebskosten Gebaeude;3300;BK Abrechnung Q4/2023;8740,00;EUR;ER-2024-050
+15.04.2024;6110;Betriebskosten Gebaeude;3300;BK Abrechnung Q1/2024;9120,00;EUR;ER-2024-051
+15.07.2024;6110;Betriebskosten Gebaeude;3300;BK Abrechnung Q2/2024;7890,00;EUR;ER-2024-052
+15.10.2024;6110;Betriebskosten Gebaeude;3300;BK Abrechnung Q3/2024;8460,00;EUR;ER-2024-053
+08.01.2024;6200;Treibstoff PKW;3300;OMV Diesel Fuhrpark Jaenner;3420,00;EUR;ER-2024-054
+08.02.2024;6200;Treibstoff PKW;3300;BP Diesel Fuhrpark Feb;3180,00;EUR;ER-2024-055
+08.03.2024;6200;Treibstoff PKW;3300;OMV Diesel Fuhrpark Maerz;3540,00;EUR;ER-2024-056
+08.04.2024;6200;Treibstoff PKW;3300;Shell Diesel Fuhrpark April;2890,00;EUR;ER-2024-057
+08.05.2024;6200;Treibstoff PKW;3300;OMV Diesel Fuhrpark Mai;3210,00;EUR;ER-2024-058
+08.06.2024;6200;Treibstoff PKW;3300;BP Diesel Fuhrpark Juni;3060,00;EUR;ER-2024-059
+08.07.2024;6200;Treibstoff PKW;3300;OMV Diesel Fuhrpark Juli;3380,00;EUR;ER-2024-060
+08.08.2024;6200;Treibstoff PKW;3300;Shell Diesel Fuhrpark Aug;3520,00;EUR;ER-2024-061
+08.09.2024;6200;Treibstoff PKW;3300;OMV Diesel Fuhrpark Sept;3150,00;EUR;ER-2024-062
+08.10.2024;6200;Treibstoff PKW;3300;BP Diesel Fuhrpark Okt;3280,00;EUR;ER-2024-063
+08.11.2024;6200;Treibstoff PKW;3300;OMV Diesel Fuhrpark Nov;3470,00;EUR;ER-2024-064
+08.12.2024;6200;Treibstoff PKW;3300;Shell Diesel Fuhrpark Dez;3620,00;EUR;ER-2024-065
+20.01.2024;6210;Treibstoff Shuttle/Bus;3300;OMV Diesel Shuttlebus Jan;1840,00;EUR;ER-2024-066
+20.04.2024;6210;Treibstoff Shuttle/Bus;3300;OMV Diesel Shuttlebus Q2;5280,00;EUR;ER-2024-067
+20.07.2024;6210;Treibstoff Shuttle/Bus;3300;OMV Diesel Shuttlebus Q3;4920,00;EUR;ER-2024-068
+20.10.2024;6210;Treibstoff Shuttle/Bus;3300;OMV Diesel Shuttlebus Q4;5610,00;EUR;ER-2024-069
+15.02.2024;6300;Wasserversorgung;3300;Gemeinde Wasserabgabe H1;4870,00;EUR;ER-2024-070
+15.08.2024;6300;Wasserversorgung;3300;Gemeinde Wasserabgabe H2;5430,00;EUR;ER-2024-071
+25.01.2024;6310;Abwasser und Kanalgebuehren;3300;Kanal Jahreszahlung;6280,00;EUR;ER-2024-072
+15.03.2024;6320;Abfallentsorgung;3300;Saubermacher Entsorgung Q1;4210,00;EUR;ER-2024-073
+15.06.2024;6320;Abfallentsorgung;3300;Saubermacher Entsorgung Q2;3890,00;EUR;ER-2024-074
+15.09.2024;6320;Abfallentsorgung;3300;Saubermacher Entsorgung Q3;4560,00;EUR;ER-2024-075
+15.12.2024;6320;Abfallentsorgung;3300;Saubermacher Entsorgung Q4;4870,00;EUR;ER-2024-076
+20.01.2024;6330;Kompostierung Kuechenabfall;3300;Biokueche Kompost Jaenner;680,00;EUR;ER-2024-077
+20.06.2024;6330;Kompostierung Kuechenabfall;3300;Biokueche Kompost H1;2140,00;EUR;ER-2024-078
+20.12.2024;6330;Kompostierung Kuechenabfall;3300;Biokueche Kompost H2;2380,00;EUR;ER-2024-079
+10.02.2024;6400;Waeschereikosten extern;3300;Salesianer Waescherei Feb;4120,00;EUR;ER-2024-080
+10.05.2024;6400;Waeschereikosten extern;3300;Salesianer Waescherei Mai;3890,00;EUR;ER-2024-081
+10.08.2024;6400;Waeschereikosten extern;3300;Salesianer Waescherei Aug;4340,00;EUR;ER-2024-082
+10.11.2024;6400;Waeschereikosten extern;3300;Salesianer Waescherei Nov;4010,00;EUR;ER-2024-083
+05.01.2024;6500;Instandhaltung Gebaeude;3300;Tischlerei Huber Reparatur;6780,00;EUR;ER-2024-084
+12.03.2024;6500;Instandhaltung Gebaeude;3300;Elektriker Moser Wartung;3420,00;EUR;ER-2024-085
+20.06.2024;6500;Instandhaltung Gebaeude;3300;Installateur Mayr Heizung;8940,00;EUR;ER-2024-086
+15.09.2024;6500;Instandhaltung Gebaeude;3300;Malerei Berger Zimmer;12350,00;EUR;ER-2024-087
+05.11.2024;6500;Instandhaltung Gebaeude;3300;Dach Sanierung Teilbereich;28400,00;EUR;ER-2024-088
+10.01.2024;6510;Instandhaltung techn. Anlagen;3300;Aufzug TUeV Pruefung;2840,00;EUR;ER-2024-089
+15.04.2024;6510;Instandhaltung techn. Anlagen;3300;Lueftungsanlage Wartung;4560,00;EUR;ER-2024-090
+20.07.2024;6510;Instandhaltung techn. Anlagen;3300;Kuehlanlagen Service;3890,00;EUR;ER-2024-091
+10.10.2024;6510;Instandhaltung techn. Anlagen;3300;Heizkessel Wartung;5670,00;EUR;ER-2024-092
+01.02.2024;6600;Versicherungen;3300;UNIQA Betriebsversicherung;12480,00;EUR;ER-2024-093
+01.08.2024;6600;Versicherungen;3300;Wiener Staedtische Haftpflicht;8940,00;EUR;ER-2024-094
+01.02.2024;6610;KFZ-Versicherung;3300;Allianz KFZ Fuhrpark;4620,00;EUR;ER-2024-095
+15.01.2024;6700;Rechts- und Beratungskosten;3300;RA Dr. Fischer Arbeitsrecht;4850,00;EUR;ER-2024-096
+15.06.2024;6700;Rechts- und Beratungskosten;3300;RA Dr. Fischer DSGVO Beratung;3210,00;EUR;ER-2024-097
+20.03.2024;6710;Steuerberatungskosten;3300;StB Kanzlei Gruber JA 2023;8470,00;EUR;ER-2024-098
+20.09.2024;6710;Steuerberatungskosten;3300;StB Kanzlei Gruber H1/2024;4890,00;EUR;ER-2024-099
+15.02.2024;6720;Wirtschaftspruefung;3300;BDO Austria Pruefung;14200,00;EUR;ER-2024-100
+10.01.2024;6800;Werbeaufwand;3300;Online Marketing Google Ads;3240,00;EUR;ER-2024-101
+10.03.2024;6800;Werbeaufwand;3300;Booking.com Provision Q1;18720,00;EUR;ER-2024-102
+10.06.2024;6800;Werbeaufwand;3300;Booking.com Provision Q2;22480,00;EUR;ER-2024-103
+10.09.2024;6800;Werbeaufwand;3300;Booking.com Provision Q3;24310,00;EUR;ER-2024-104
+10.12.2024;6800;Werbeaufwand;3300;Booking.com Provision Q4;19870,00;EUR;ER-2024-105
+15.05.2024;6810;Druckkosten Prospekte;3300;Druckerei Berger Sommerprospekt;5680,00;EUR;ER-2024-106
+15.10.2024;6810;Druckkosten Prospekte;3300;Druckerei Berger Winterprospekt;4920,00;EUR;ER-2024-107
+28.01.2024;6900;Abschreibung Gebaeude;3300;AfA Hotelgebaeude Jaenner;8750,00;EUR;ER-2024-108
+28.02.2024;6900;Abschreibung Gebaeude;3300;AfA Hotelgebaeude Feb;8750,00;EUR;ER-2024-109
+28.03.2024;6900;Abschreibung Gebaeude;3300;AfA Hotelgebaeude Maerz;8750,00;EUR;ER-2024-110
+28.04.2024;6900;Abschreibung Gebaeude;3300;AfA Hotelgebaeude April;8750,00;EUR;ER-2024-111
+28.05.2024;6900;Abschreibung Gebaeude;3300;AfA Hotelgebaeude Mai;8750,00;EUR;ER-2024-112
+28.06.2024;6900;Abschreibung Gebaeude;3300;AfA Hotelgebaeude Juni;8750,00;EUR;ER-2024-113
+28.07.2024;6900;Abschreibung Gebaeude;3300;AfA Hotelgebaeude Juli;8750,00;EUR;ER-2024-114
+28.08.2024;6900;Abschreibung Gebaeude;3300;AfA Hotelgebaeude Aug;8750,00;EUR;ER-2024-115
+28.09.2024;6900;Abschreibung Gebaeude;3300;AfA Hotelgebaeude Sept;8750,00;EUR;ER-2024-116
+28.10.2024;6900;Abschreibung Gebaeude;3300;AfA Hotelgebaeude Okt;8750,00;EUR;ER-2024-117
+28.11.2024;6900;Abschreibung Gebaeude;3300;AfA Hotelgebaeude Nov;8750,00;EUR;ER-2024-118
+28.12.2024;6900;Abschreibung Gebaeude;3300;AfA Hotelgebaeude Dez;8750,00;EUR;ER-2024-119
+28.01.2024;6910;Abschreibung Einrichtung;3300;AfA Hoteleinrichtung Jaenner;4320,00;EUR;ER-2024-120
+28.04.2024;6910;Abschreibung Einrichtung;3300;AfA Hoteleinrichtung Q2;12960,00;EUR;ER-2024-121
+28.07.2024;6910;Abschreibung Einrichtung;3300;AfA Hoteleinrichtung Q3;12960,00;EUR;ER-2024-122
+28.10.2024;6910;Abschreibung Einrichtung;3300;AfA Hoteleinrichtung Q4;12960,00;EUR;ER-2024-123
+28.01.2024;6920;Abschreibung Fahrzeuge;3300;AfA Fuhrpark Q1;3840,00;EUR;ER-2024-124
+28.07.2024;6920;Abschreibung Fahrzeuge;3300;AfA Fuhrpark H2;7680,00;EUR;ER-2024-125
+01.01.2024;7000;Loehne;2700;Loehne Jaenner;68420,00;EUR;ER-2024-126
+01.02.2024;7000;Loehne;2700;Loehne Feb;71230,00;EUR;ER-2024-127
+01.03.2024;7000;Loehne;2700;Loehne Maerz;69870,00;EUR;ER-2024-128
+01.04.2024;7000;Loehne;2700;Loehne April;72340,00;EUR;ER-2024-129
+01.05.2024;7000;Loehne;2700;Loehne Mai;74560,00;EUR;ER-2024-130
+01.06.2024;7000;Loehne;2700;Loehne Juni;78920,00;EUR;ER-2024-131
+01.07.2024;7000;Loehne;2700;Loehne Juli;82340,00;EUR;ER-2024-132
+01.08.2024;7000;Loehne;2700;Loehne Aug;81470,00;EUR;ER-2024-133
+01.09.2024;7000;Loehne;2700;Loehne Sept;76890,00;EUR;ER-2024-134
+01.10.2024;7000;Loehne;2700;Loehne Okt;73210,00;EUR;ER-2024-135
+01.11.2024;7000;Loehne;2700;Loehne Nov;69840,00;EUR;ER-2024-136
+01.12.2024;7000;Loehne;2700;Loehne Dez;74520,00;EUR;ER-2024-137
+01.01.2024;7010;Gehaelter;2700;Gehaelter Jaenner;42380,00;EUR;ER-2024-138
+01.02.2024;7010;Gehaelter;2700;Gehaelter Feb;42380,00;EUR;ER-2024-139
+01.03.2024;7010;Gehaelter;2700;Gehaelter Maerz;42380,00;EUR;ER-2024-140
+01.04.2024;7010;Gehaelter;2700;Gehaelter April;42380,00;EUR;ER-2024-141
+01.05.2024;7010;Gehaelter;2700;Gehaelter Mai;42380,00;EUR;ER-2024-142
+01.06.2024;7010;Gehaelter;2700;Gehaelter Juni;42380,00;EUR;ER-2024-143
+01.07.2024;7010;Gehaelter;2700;Gehaelter Juli;42380,00;EUR;ER-2024-144
+01.08.2024;7010;Gehaelter;2700;Gehaelter Aug;42380,00;EUR;ER-2024-145
+01.09.2024;7010;Gehaelter;2700;Gehaelter Sept;42380,00;EUR;ER-2024-146
+01.10.2024;7010;Gehaelter;2700;Gehaelter Okt;42380,00;EUR;ER-2024-147
+01.11.2024;7010;Gehaelter;2700;Gehaelter Nov;42380,00;EUR;ER-2024-148
+01.12.2024;7010;Gehaelter;2700;Gehaelter Dez;42380,00;EUR;ER-2024-149
+15.01.2024;7200;Sozialaufwand AG-Anteil;2700;DG-Beitraege Jaenner;28420,00;EUR;ER-2024-150
+15.04.2024;7200;Sozialaufwand AG-Anteil;2700;DG-Beitraege Q2;87240,00;EUR;ER-2024-151
+15.07.2024;7200;Sozialaufwand AG-Anteil;2700;DG-Beitraege Q3;89870,00;EUR;ER-2024-152
+15.10.2024;7200;Sozialaufwand AG-Anteil;2700;DG-Beitraege Q4;85430,00;EUR;ER-2024-153
+15.06.2024;7210;Urlaubs- und Weihnachtsgeld;2700;Urlaubsgeld Rueckstellung;62400,00;EUR;ER-2024-154
+15.11.2024;7210;Urlaubs- und Weihnachtsgeld;2700;Weihnachtsgeld Rueckstellung;62400,00;EUR;ER-2024-155
+05.03.2024;7300;Freiwilliger Sozialaufwand;3300;Betriebsausflug Mitarbeiter;4870,00;EUR;ER-2024-156
+05.12.2024;7300;Freiwilliger Sozialaufwand;3300;Weihnachtsfeier;6240,00;EUR;ER-2024-157
+10.01.2024;7400;Aus- und Weiterbildung;3300;Kuechenteam Fortbildung;3420,00;EUR;ER-2024-158
+10.06.2024;7400;Aus- und Weiterbildung;3300;Service Schulung;2870,00;EUR;ER-2024-159
+10.09.2024;7400;Aus- und Weiterbildung;3300;Fuehrungskraefte Seminar;5840,00;EUR;ER-2024-160
+20.03.2024;7600;Reisekosten Inland;3300;Dienstreise Salzburg Messe;1240,00;EUR;ER-2024-161
+20.06.2024;7600;Reisekosten Inland;3300;Dienstreise Wien Tourismusmesse;2180,00;EUR;ER-2024-162
+20.09.2024;7600;Reisekosten Inland;3300;Dienstreise Innsbruck Partner;980,00;EUR;ER-2024-163
+15.02.2024;7610;Reisekosten Ausland;3300;ITB Berlin Messebesuch;4870,00;EUR;ER-2024-164
+15.10.2024;7610;Reisekosten Ausland;3300;WTM London Messebesuch;6420,00;EUR;ER-2024-165
+01.03.2024;7700;Speditionskosten;3300;DB Schenker Lieferung Q1;3890,00;EUR;ER-2024-166
+01.06.2024;7700;Speditionskosten;3300;GLS Paketversand H1;2140,00;EUR;ER-2024-167
+01.09.2024;7700;Speditionskosten;3300;DB Schenker Lieferung Q3;3470,00;EUR;ER-2024-168
+01.12.2024;7700;Speditionskosten;3300;DPD Express Lieferungen Q4;2680,00;EUR;ER-2024-169
+15.01.2024;7800;Telefon und Internet;3300;A1 Business Internet Jaenner;1420,00;EUR;ER-2024-170
+15.04.2024;7800;Telefon und Internet;3300;A1 Business Internet Q2;4260,00;EUR;ER-2024-171
+15.07.2024;7800;Telefon und Internet;3300;A1 Business Internet Q3;4260,00;EUR;ER-2024-172
+15.10.2024;7800;Telefon und Internet;3300;A1 Business Internet Q4;4260,00;EUR;ER-2024-173
+20.01.2024;7810;EDV und Software;3300;Oracle OPERA PMS Lizenz;8940,00;EUR;ER-2024-174
+20.07.2024;7810;EDV und Software;3300;Protel Hotelsoftware H2;7820,00;EUR;ER-2024-175
+20.01.2024;7820;Buero- und Druckmaterial;3300;Pagro Buerobedarf;1240,00;EUR;ER-2024-176
+20.07.2024;7820;Buero- und Druckmaterial;3300;Pagro Buerobedarf H2;1380,00;EUR;ER-2024-177
+31.01.2024;8100;Bankzinsen und Spesen;2800;Raiffeisen Kontogebuehren Jan;420,00;EUR;ER-2024-178
+31.03.2024;8100;Bankzinsen und Spesen;2800;Raiffeisen Kontogebuehren Q1;1260,00;EUR;ER-2024-179
+30.06.2024;8100;Bankzinsen und Spesen;2800;Raiffeisen Kontogebuehren Q2;1260,00;EUR;ER-2024-180
+30.09.2024;8100;Bankzinsen und Spesen;2800;Raiffeisen Kontogebuehren Q3;1260,00;EUR;ER-2024-181
+31.12.2024;8100;Bankzinsen und Spesen;2800;Raiffeisen Kontogebuehren Q4;1260,00;EUR;ER-2024-182
+15.03.2024;8200;Zinsen Bankdarlehen;2800;Raiffeisen Kredit Zinsen Q1;6840,00;EUR;ER-2024-183
+15.06.2024;8200;Zinsen Bankdarlehen;2800;Raiffeisen Kredit Zinsen Q2;6720,00;EUR;ER-2024-184
+15.09.2024;8200;Zinsen Bankdarlehen;2800;Raiffeisen Kredit Zinsen Q3;6590,00;EUR;ER-2024-185
+15.12.2024;8200;Zinsen Bankdarlehen;2800;Raiffeisen Kredit Zinsen Q4;6460,00;EUR;ER-2024-186
+30.06.2024;4000;Umsatzerloese Naechtigung;2800;Naechtigung Sommer H1;-420680,00;EUR;RE-2024-006
+31.07.2024;4000;Umsatzerloese Naechtigung;2800;Naechtigung Juli Hochsaison;-245300,00;EUR;RE-2024-007
+31.08.2024;4000;Umsatzerloese Naechtigung;2800;Naechtigung August Hochsaison;-238920,00;EUR;RE-2024-008
+30.09.2024;4000;Umsatzerloese Naechtigung;2800;Naechtigung Herbst;-142870,00;EUR;RE-2024-009
+31.12.2024;4000;Umsatzerloese Naechtigung;2800;Naechtigung Winter Q4;-198420,00;EUR;RE-2024-010
+30.06.2024;4010;Umsatzerloese Halbpension;2800;Halbpension H1;-148720,00;EUR;RE-2024-011
+31.12.2024;4010;Umsatzerloese Halbpension;2800;Halbpension H2;-156840,00;EUR;RE-2024-012
+30.06.2024;4020;Umsatzerloese Wellness/Spa;2800;Wellness Einnahmen H1;-68430,00;EUR;RE-2024-013
+31.12.2024;4020;Umsatzerloese Wellness/Spa;2800;Wellness Einnahmen H2;-72180,00;EUR;RE-2024-014
+31.03.2024;4030;Umsatzerloese Seminarraeume;2800;Seminarraum Q1;-28900,00;EUR;RE-2024-015
+30.09.2024;4030;Umsatzerloese Seminarraeume;2800;Seminarraum Q3;-22340,00;EUR;RE-2024-016

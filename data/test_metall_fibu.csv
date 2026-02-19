@@ -1,0 +1,170 @@
+Buchungsdatum;Konto;Kontobezeichnung;Gegenkonto;Buchungstext;Betrag;Waehrung;Belegnummer
+03.01.2024;4000;Umsatzerloese Metallteile;2800;Erloese Metallbearbeitung Jan;-342870,50;EUR;RE-2024-001
+31.01.2024;4000;Umsatzerloese Metallteile;2800;Erloese Metallbearbeitung Jan Teil2;-128430,00;EUR;RE-2024-002
+28.02.2024;4000;Umsatzerloese Metallteile;2800;Erloese Metallbearbeitung Feb;-389210,00;EUR;RE-2024-003
+31.03.2024;4000;Umsatzerloese Metallteile;2800;Erloese Metallbearbeitung Q1 Rest;-412680,00;EUR;RE-2024-004
+30.06.2024;4000;Umsatzerloese Metallteile;2800;Erloese Metallbearbeitung Q2;-1128450,00;EUR;RE-2024-005
+30.09.2024;4000;Umsatzerloese Metallteile;2800;Erloese Metallbearbeitung Q3;-986720,00;EUR;RE-2024-006
+31.12.2024;4000;Umsatzerloese Metallteile;2800;Erloese Metallbearbeitung Q4;-1056340,00;EUR;RE-2024-007
+15.03.2024;4010;Umsatzerloese Schweissarbeiten;2800;Schweissarbeiten Sonderfertigung Q1;-87430,00;EUR;RE-2024-008
+15.06.2024;4010;Umsatzerloese Schweissarbeiten;2800;Schweissarbeiten Q2;-92680,00;EUR;RE-2024-009
+15.09.2024;4010;Umsatzerloese Schweissarbeiten;2800;Schweissarbeiten Q3;-78920,00;EUR;RE-2024-010
+15.12.2024;4010;Umsatzerloese Schweissarbeiten;2800;Schweissarbeiten Q4;-84310,00;EUR;RE-2024-011
+31.03.2024;4020;Umsatzerloese Reparatur/Service;2800;Reparaturauftraege Q1;-42180,00;EUR;RE-2024-012
+30.09.2024;4020;Umsatzerloese Reparatur/Service;2800;Reparaturauftraege H2;-68940,00;EUR;RE-2024-013
+10.01.2024;5000;Wareneinsatz Stahl/Metall;3300;Voestalpine Stahl Lieferung;82340,00;EUR;ER-2024-001
+25.01.2024;5000;Wareneinsatz Stahl/Metall;3300;Amari Austria Aluminium;34560,00;EUR;ER-2024-002
+10.02.2024;5000;Wareneinsatz Stahl/Metall;3300;Voestalpine Stahlblech;78920,00;EUR;ER-2024-003
+25.02.2024;5000;Wareneinsatz Stahl/Metall;3300;Kloepper Stahl Edelstahl;42180,00;EUR;ER-2024-004
+10.03.2024;5000;Wareneinsatz Stahl/Metall;3300;Voestalpine Rundstahl;65430,00;EUR;ER-2024-005
+25.03.2024;5000;Wareneinsatz Stahl/Metall;3300;Amari Austria Kupfer;28740,00;EUR;ER-2024-006
+15.04.2024;5000;Wareneinsatz Stahl/Metall;3300;Voestalpine Stahl Q2;186420,00;EUR;ER-2024-007
+15.07.2024;5000;Wareneinsatz Stahl/Metall;3300;Voestalpine Stahl Q3;172890,00;EUR;ER-2024-008
+15.10.2024;5000;Wareneinsatz Stahl/Metall;3300;Voestalpine Stahl Q4;194310,00;EUR;ER-2024-009
+10.01.2024;5010;Schweissdraht und Schweissgas;3300;Linde Gas Argon/CO2;4870,00;EUR;ER-2024-010
+10.04.2024;5010;Schweissdraht und Schweissgas;3300;Linde Gas Schweissgas Q2;5230,00;EUR;ER-2024-011
+10.07.2024;5010;Schweissdraht und Schweissgas;3300;Linde Gas Schweissgas Q3;4980,00;EUR;ER-2024-012
+10.10.2024;5010;Schweissdraht und Schweissgas;3300;Linde Gas Schweissgas Q4;5420,00;EUR;ER-2024-013
+15.01.2024;5020;Werkzeuge und Verschleissteile;3300;Hoffmann Group Werkzeuge;8940,00;EUR;ER-2024-014
+15.04.2024;5020;Werkzeuge und Verschleissteile;3300;Hoffmann Group Fraeser/Bohrer;12380,00;EUR;ER-2024-015
+15.07.2024;5020;Werkzeuge und Verschleissteile;3300;Hoffmann Group Schleifmittel;7890,00;EUR;ER-2024-016
+15.10.2024;5020;Werkzeuge und Verschleissteile;3300;Hoffmann Group Werkzeuge Q4;9870,00;EUR;ER-2024-017
+20.01.2024;5030;Kuehlschmiermittel;3300;Blaser Swisslube Kuehlmittel;3420,00;EUR;ER-2024-018
+20.07.2024;5030;Kuehlschmiermittel;3300;Blaser Swisslube Kuehlmittel H2;4180,00;EUR;ER-2024-019
+31.01.2024;6000;Stromkosten Produktion;3310;Energie AG Strom Jaenner;28740,00;EUR;ER-2024-020
+28.02.2024;6000;Stromkosten Produktion;3310;Energie AG Strom Feb;26890,00;EUR;ER-2024-021
+31.03.2024;6000;Stromkosten Produktion;3310;Energie AG Strom Maerz;29120,00;EUR;ER-2024-022
+30.04.2024;6000;Stromkosten Produktion;3310;Energie AG Strom April;27680,00;EUR;ER-2024-023
+31.05.2024;6000;Stromkosten Produktion;3310;Energie AG Strom Mai;28340,00;EUR;ER-2024-024
+30.06.2024;6000;Stromkosten Produktion;3310;Energie AG Strom Juni;26970,00;EUR;ER-2024-025
+31.07.2024;6000;Stromkosten Produktion;3310;Energie AG Strom Juli;25840,00;EUR;ER-2024-026
+31.08.2024;6000;Stromkosten Produktion;3310;Energie AG Strom Aug;27120,00;EUR;ER-2024-027
+30.09.2024;6000;Stromkosten Produktion;3310;Energie AG Strom Sept;28450,00;EUR;ER-2024-028
+31.10.2024;6000;Stromkosten Produktion;3310;Energie AG Strom Okt;29870,00;EUR;ER-2024-029
+30.11.2024;6000;Stromkosten Produktion;3310;Energie AG Strom Nov;30240,00;EUR;ER-2024-030
+31.12.2024;6000;Stromkosten Produktion;3310;Energie AG Strom Dez;31420,00;EUR;ER-2024-031
+05.01.2024;6010;Erdgas Produktion/Heizung;3310;Energie AG Gas Jaenner;18420,00;EUR;ER-2024-032
+05.02.2024;6010;Erdgas Produktion/Heizung;3310;Energie AG Gas Feb;17890,00;EUR;ER-2024-033
+05.03.2024;6010;Erdgas Produktion/Heizung;3310;Energie AG Gas Maerz;15670,00;EUR;ER-2024-034
+05.04.2024;6010;Erdgas Produktion/Heizung;3310;Energie AG Gas April;10240,00;EUR;ER-2024-035
+05.05.2024;6010;Erdgas Produktion/Heizung;3310;Energie AG Gas Mai;7890,00;EUR;ER-2024-036
+05.06.2024;6010;Erdgas Produktion/Heizung;3310;Energie AG Gas Juni;6340,00;EUR;ER-2024-037
+05.07.2024;6010;Erdgas Produktion/Heizung;3310;Energie AG Gas Juli;5870,00;EUR;ER-2024-038
+05.08.2024;6010;Erdgas Produktion/Heizung;3310;Energie AG Gas Aug;5420,00;EUR;ER-2024-039
+05.09.2024;6010;Erdgas Produktion/Heizung;3310;Energie AG Gas Sept;7680,00;EUR;ER-2024-040
+05.10.2024;6010;Erdgas Produktion/Heizung;3310;Energie AG Gas Okt;12340,00;EUR;ER-2024-041
+05.11.2024;6010;Erdgas Produktion/Heizung;3310;Energie AG Gas Nov;16870,00;EUR;ER-2024-042
+05.12.2024;6010;Erdgas Produktion/Heizung;3310;Energie AG Gas Dez;19420,00;EUR;ER-2024-043
+10.01.2024;6100;Miete Produktionshalle;3300;Hallenpacht Jaenner;14200,00;EUR;ER-2024-044
+10.02.2024;6100;Miete Produktionshalle;3300;Hallenpacht Feb;14200,00;EUR;ER-2024-045
+10.03.2024;6100;Miete Produktionshalle;3300;Hallenpacht Maerz;14200,00;EUR;ER-2024-046
+10.04.2024;6100;Miete Produktionshalle;3300;Hallenpacht April;14200,00;EUR;ER-2024-047
+10.05.2024;6100;Miete Produktionshalle;3300;Hallenpacht Mai;14200,00;EUR;ER-2024-048
+10.06.2024;6100;Miete Produktionshalle;3300;Hallenpacht Juni;14200,00;EUR;ER-2024-049
+10.07.2024;6100;Miete Produktionshalle;3300;Hallenpacht Juli;14200,00;EUR;ER-2024-050
+10.08.2024;6100;Miete Produktionshalle;3300;Hallenpacht Aug;14200,00;EUR;ER-2024-051
+10.09.2024;6100;Miete Produktionshalle;3300;Hallenpacht Sept;14200,00;EUR;ER-2024-052
+10.10.2024;6100;Miete Produktionshalle;3300;Hallenpacht Okt;14200,00;EUR;ER-2024-053
+10.11.2024;6100;Miete Produktionshalle;3300;Hallenpacht Nov;14200,00;EUR;ER-2024-054
+10.12.2024;6100;Miete Produktionshalle;3300;Hallenpacht Dez;14200,00;EUR;ER-2024-055
+05.01.2024;6200;Treibstoff LKW/Stapler;3300;OMV Diesel LKW Jaenner;6840,00;EUR;ER-2024-056
+05.02.2024;6200;Treibstoff LKW/Stapler;3300;OMV Diesel LKW Feb;5920,00;EUR;ER-2024-057
+05.03.2024;6200;Treibstoff LKW/Stapler;3300;OMV Diesel LKW Maerz;7120,00;EUR;ER-2024-058
+05.04.2024;6200;Treibstoff LKW/Stapler;3300;OMV Diesel LKW April;6340,00;EUR;ER-2024-059
+05.05.2024;6200;Treibstoff LKW/Stapler;3300;OMV Diesel LKW Mai;6780,00;EUR;ER-2024-060
+05.06.2024;6200;Treibstoff LKW/Stapler;3300;OMV Diesel LKW Juni;6420,00;EUR;ER-2024-061
+05.07.2024;6200;Treibstoff LKW/Stapler;3300;OMV Diesel LKW Juli;6190,00;EUR;ER-2024-062
+05.08.2024;6200;Treibstoff LKW/Stapler;3300;OMV Diesel LKW Aug;6870,00;EUR;ER-2024-063
+05.09.2024;6200;Treibstoff LKW/Stapler;3300;OMV Diesel LKW Sept;7240,00;EUR;ER-2024-064
+05.10.2024;6200;Treibstoff LKW/Stapler;3300;OMV Diesel LKW Okt;7080,00;EUR;ER-2024-065
+05.11.2024;6200;Treibstoff LKW/Stapler;3300;OMV Diesel LKW Nov;6540,00;EUR;ER-2024-066
+05.12.2024;6200;Treibstoff LKW/Stapler;3300;OMV Diesel LKW Dez;7410,00;EUR;ER-2024-067
+15.02.2024;6210;Propangas Stapler;3300;Linde Propangas Flaschen;1240,00;EUR;ER-2024-068
+15.05.2024;6210;Propangas Stapler;3300;Linde Propangas Flaschen Q2;1380,00;EUR;ER-2024-069
+15.08.2024;6210;Propangas Stapler;3300;Linde Propangas Flaschen Q3;1420,00;EUR;ER-2024-070
+15.11.2024;6210;Propangas Stapler;3300;Linde Propangas Flaschen Q4;1280,00;EUR;ER-2024-071
+20.01.2024;6300;Wasserversorgung Produktion;3300;EVN Wasser Jaenner;2180,00;EUR;ER-2024-072
+20.04.2024;6300;Wasserversorgung Produktion;3300;EVN Wasser Q2;6870,00;EUR;ER-2024-073
+20.07.2024;6300;Wasserversorgung Produktion;3300;EVN Wasser Q3;7240,00;EUR;ER-2024-074
+20.10.2024;6300;Wasserversorgung Produktion;3300;EVN Wasser Q4;6420,00;EUR;ER-2024-075
+25.02.2024;6310;Abfallentsorgung Metallschrott;3300;Loacker Recycling Schrott Q1;8740,00;EUR;ER-2024-076
+25.05.2024;6310;Abfallentsorgung Metallschrott;3300;Loacker Recycling Schrott Q2;9120,00;EUR;ER-2024-077
+25.08.2024;6310;Abfallentsorgung Metallschrott;3300;Loacker Recycling Schrott Q3;8430,00;EUR;ER-2024-078
+25.11.2024;6310;Abfallentsorgung Metallschrott;3300;Loacker Recycling Schrott Q4;9870,00;EUR;ER-2024-079
+10.03.2024;6320;Entsorgung Kuehlschmiermittel;3300;Saubermacher Sondermuell Q1;3420,00;EUR;ER-2024-080
+10.06.2024;6320;Entsorgung Kuehlschmiermittel;3300;Saubermacher Sondermuell Q2;3680,00;EUR;ER-2024-081
+10.09.2024;6320;Entsorgung Kuehlschmiermittel;3300;Saubermacher Sondermuell Q3;3240,00;EUR;ER-2024-082
+10.12.2024;6320;Entsorgung Kuehlschmiermittel;3300;Saubermacher Sondermuell Q4;3890,00;EUR;ER-2024-083
+01.01.2024;6400;Spedition/Versand Fertigteile;3300;Gebrüder Weiss Versand Jan;12480,00;EUR;ER-2024-084
+01.02.2024;6400;Spedition/Versand Fertigteile;3300;DB Schenker Versand Feb;14320,00;EUR;ER-2024-085
+01.03.2024;6400;Spedition/Versand Fertigteile;3300;Gebrüder Weiss Versand Maerz;11870,00;EUR;ER-2024-086
+01.04.2024;6400;Spedition/Versand Fertigteile;3300;Dachser Versand Q2;38420,00;EUR;ER-2024-087
+01.07.2024;6400;Spedition/Versand Fertigteile;3300;Gebrüder Weiss Versand Q3;32870,00;EUR;ER-2024-088
+01.10.2024;6400;Spedition/Versand Fertigteile;3300;DB Schenker Versand Q4;36940,00;EUR;ER-2024-089
+15.01.2024;6500;Instandhaltung Maschinen;3300;CNC Fraese Generalueberholung;24870,00;EUR;ER-2024-090
+15.04.2024;6500;Instandhaltung Maschinen;3300;Drehmaschine Wartung;8940,00;EUR;ER-2024-091
+15.07.2024;6500;Instandhaltung Maschinen;3300;Schweissroboter Kalibrierung;12380,00;EUR;ER-2024-092
+15.10.2024;6500;Instandhaltung Maschinen;3300;Saege und Pressenanlage Wartung;14560,00;EUR;ER-2024-093
+20.02.2024;6510;Instandhaltung Gebaeude;3300;Hallenboden Sanierung;18740,00;EUR;ER-2024-094
+20.08.2024;6510;Instandhaltung Gebaeude;3300;Dachreparatur Leck;8420,00;EUR;ER-2024-095
+01.02.2024;6600;Betriebsversicherung;3300;Generali Betriebsversicherung;18420,00;EUR;ER-2024-096
+01.08.2024;6600;Betriebsversicherung;3300;UNIQA Maschinenbruch;12870,00;EUR;ER-2024-097
+01.02.2024;6610;KFZ-Versicherung Fuhrpark;3300;Allianz KFZ LKW+PKW;6840,00;EUR;ER-2024-098
+15.03.2024;6700;Rechtsberatung;3300;RA Dr. Huber Vertragsrecht;4870,00;EUR;ER-2024-099
+15.09.2024;6700;Rechtsberatung;3300;RA Dr. Huber Gewerbeverfahren;6420,00;EUR;ER-2024-100
+20.03.2024;6710;Steuerberatung;3300;StB Kanzlei Wimmer JA 2023;12840,00;EUR;ER-2024-101
+20.09.2024;6710;Steuerberatung;3300;StB Kanzlei Wimmer H1/2024;6870,00;EUR;ER-2024-102
+10.06.2024;6720;Zertifizierung ISO 9001;3300;TUeV Austria ISO Audit;14280,00;EUR;ER-2024-103
+10.11.2024;6720;Zertifizierung ISO 14001;3300;TUeV Austria Umwelt Audit;16420,00;EUR;ER-2024-104
+28.01.2024;6900;Abschreibung Gebaeude;3300;AfA Produktionshalle Jan;6420,00;EUR;ER-2024-105
+28.04.2024;6900;Abschreibung Gebaeude;3300;AfA Produktionshalle Q2;19260,00;EUR;ER-2024-106
+28.07.2024;6900;Abschreibung Gebaeude;3300;AfA Produktionshalle Q3;19260,00;EUR;ER-2024-107
+28.10.2024;6900;Abschreibung Gebaeude;3300;AfA Produktionshalle Q4;19260,00;EUR;ER-2024-108
+28.01.2024;6910;Abschreibung Maschinen;3300;AfA CNC Maschinen Jan;14870,00;EUR;ER-2024-109
+28.04.2024;6910;Abschreibung Maschinen;3300;AfA CNC Maschinen Q2;44610,00;EUR;ER-2024-110
+28.07.2024;6910;Abschreibung Maschinen;3300;AfA CNC Maschinen Q3;44610,00;EUR;ER-2024-111
+28.10.2024;6910;Abschreibung Maschinen;3300;AfA CNC Maschinen Q4;44610,00;EUR;ER-2024-112
+28.01.2024;6920;Abschreibung Fahrzeuge;3300;AfA LKW und Stapler Q1;5840,00;EUR;ER-2024-113
+28.07.2024;6920;Abschreibung Fahrzeuge;3300;AfA LKW und Stapler H2;11680,00;EUR;ER-2024-114
+01.01.2024;7000;Loehne Produktion;2700;Fertigungsloehne Jaenner;124870,00;EUR;ER-2024-115
+01.02.2024;7000;Loehne Produktion;2700;Fertigungsloehne Feb;126340,00;EUR;ER-2024-116
+01.03.2024;7000;Loehne Produktion;2700;Fertigungsloehne Maerz;128420,00;EUR;ER-2024-117
+01.04.2024;7000;Loehne Produktion;2700;Fertigungsloehne April;125870,00;EUR;ER-2024-118
+01.05.2024;7000;Loehne Produktion;2700;Fertigungsloehne Mai;127340,00;EUR;ER-2024-119
+01.06.2024;7000;Loehne Produktion;2700;Fertigungsloehne Juni;129870,00;EUR;ER-2024-120
+01.07.2024;7000;Loehne Produktion;2700;Fertigungsloehne Juli;124560,00;EUR;ER-2024-121
+01.08.2024;7000;Loehne Produktion;2700;Fertigungsloehne Aug;121340,00;EUR;ER-2024-122
+01.09.2024;7000;Loehne Produktion;2700;Fertigungsloehne Sept;128740,00;EUR;ER-2024-123
+01.10.2024;7000;Loehne Produktion;2700;Fertigungsloehne Okt;130240,00;EUR;ER-2024-124
+01.11.2024;7000;Loehne Produktion;2700;Fertigungsloehne Nov;127870,00;EUR;ER-2024-125
+01.12.2024;7000;Loehne Produktion;2700;Fertigungsloehne Dez;131420,00;EUR;ER-2024-126
+01.01.2024;7010;Gehaelter Verwaltung;2700;Verwaltungsgehaelter Jan;48720,00;EUR;ER-2024-127
+01.04.2024;7010;Gehaelter Verwaltung;2700;Verwaltungsgehaelter Q2;146160,00;EUR;ER-2024-128
+01.07.2024;7010;Gehaelter Verwaltung;2700;Verwaltungsgehaelter Q3;146160,00;EUR;ER-2024-129
+01.10.2024;7010;Gehaelter Verwaltung;2700;Verwaltungsgehaelter Q4;146160,00;EUR;ER-2024-130
+15.01.2024;7200;Sozialaufwand AG-Anteil;2700;DG-Beitraege Jaenner;42680,00;EUR;ER-2024-131
+15.04.2024;7200;Sozialaufwand AG-Anteil;2700;DG-Beitraege Q2;131240,00;EUR;ER-2024-132
+15.07.2024;7200;Sozialaufwand AG-Anteil;2700;DG-Beitraege Q3;128740,00;EUR;ER-2024-133
+15.10.2024;7200;Sozialaufwand AG-Anteil;2700;DG-Beitraege Q4;134870,00;EUR;ER-2024-134
+15.06.2024;7210;Urlaubs- und Weihnachtsgeld;2700;Urlaubsgeld;98400,00;EUR;ER-2024-135
+15.11.2024;7210;Urlaubs- und Weihnachtsgeld;2700;Weihnachtsgeld;98400,00;EUR;ER-2024-136
+10.03.2024;7400;Aus- und Weiterbildung;3300;CNC Programmierung Kurs;6870,00;EUR;ER-2024-137
+10.09.2024;7400;Aus- und Weiterbildung;3300;Schweisszertifizierung;4280,00;EUR;ER-2024-138
+20.02.2024;7600;Reisekosten Inland;3300;Dienstreise Linz Kundentermin;840,00;EUR;ER-2024-139
+20.05.2024;7600;Reisekosten Inland;3300;Dienstreise Graz Zulieferer;1120,00;EUR;ER-2024-140
+20.08.2024;7600;Reisekosten Inland;3300;Dienstreise Wien Messe;1680,00;EUR;ER-2024-141
+20.11.2024;7600;Reisekosten Inland;3300;Dienstreise Salzburg Audit;920,00;EUR;ER-2024-142
+10.03.2024;7610;Reisekosten Ausland;3300;Hannover Messe Deutschland;8420,00;EUR;ER-2024-143
+10.10.2024;7610;Reisekosten Ausland;3300;EMO Milano Werkzeugmesse;6870,00;EUR;ER-2024-144
+15.01.2024;7800;Telefon Internet;3300;A1 Business Telefon/Internet;2840,00;EUR;ER-2024-145
+15.07.2024;7800;Telefon Internet;3300;A1 Business Telefon/Internet H2;5680,00;EUR;ER-2024-146
+20.01.2024;7810;EDV Software Lizenzen;3300;SolidWorks CAD Jahreslizenz;12480,00;EUR;ER-2024-147
+20.01.2024;7810;EDV Software Lizenzen;3300;ERP System abas Wartung;8740,00;EUR;ER-2024-148
+20.07.2024;7810;EDV Software Lizenzen;3300;CAM Software Mastercam;6420,00;EUR;ER-2024-149
+31.01.2024;8100;Bankzinsen und Spesen;2800;Raiffeisen Kontogebuehren;1840,00;EUR;ER-2024-150
+30.06.2024;8100;Bankzinsen und Spesen;2800;Raiffeisen Kontogebuehren H1;3680,00;EUR;ER-2024-151
+31.12.2024;8100;Bankzinsen und Spesen;2800;Raiffeisen Kontogebuehren H2;3680,00;EUR;ER-2024-152
+15.03.2024;8200;Zinsen Investitionskredit;2800;Sparkasse Kredit CNC Zinsen Q1;8420,00;EUR;ER-2024-153
+15.06.2024;8200;Zinsen Investitionskredit;2800;Sparkasse Kredit CNC Zinsen Q2;8280,00;EUR;ER-2024-154
+15.09.2024;8200;Zinsen Investitionskredit;2800;Sparkasse Kredit CNC Zinsen Q3;8130,00;EUR;ER-2024-155
+15.12.2024;8200;Zinsen Investitionskredit;2800;Sparkasse Kredit CNC Zinsen Q4;7980,00;EUR;ER-2024-156

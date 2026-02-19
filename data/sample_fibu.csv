@@ -1,0 +1,39 @@
+Buchungsdatum;Konto;Gegenkonto;Betrag;Steuercode;Kostenstelle;Belegnummer;Buchungstext
+02.01.2025;6000;3300;15.432,50;U20;100;ER-2025-0001;Strom Jaenner - EVN Energieversorgung
+05.01.2025;6010;3300;4.250,00;U20;100;ER-2025-0002;Erdgas Jaenner - Wien Energie
+08.01.2025;6200;3300;2.890,00;U20;200;ER-2025-0003;Diesel Fuhrpark - OMV Tankstelle
+10.01.2025;6210;3300;1.150,00;U20;200;ER-2025-0004;Benzin PKW - BP Tankstelle
+12.01.2025;5000;3300;45.000,00;U20;300;ER-2025-0005;Rundholz Einkauf - Binderholz GmbH
+15.01.2025;5010;3300;12.500,00;U20;300;ER-2025-0006;Schnittholz - Mayr-Melnhof Holz
+18.01.2025;6300;3300;3.200,00;U20;100;ER-2025-0007;Wasserversorgung Q1 - Stadtwerke
+20.01.2025;6310;3300;1.850,00;U20;100;ER-2025-0008;Abfallentsorgung - Saubermacher AG
+22.01.2025;6400;3300;8.750,00;U20;400;ER-2025-0009;Spedition Fracht - Quehenberger Logistics
+25.01.2025;6410;3300;3.400,00;U20;400;ER-2025-0010;Paketversand - Oesterreichische Post
+28.01.2025;6500;3300;2.100,00;U20;100;ER-2025-0011;Bueromaterial - Pagro Diskont
+30.01.2025;6800;3300;5.200,00;U20;500;ER-2025-0012;Versicherungspraemie - Generali
+01.02.2025;6000;3300;14.890,00;U20;100;ER-2025-0013;Strom Februar - EVN Energieversorgung
+03.02.2025;6010;3300;3.980,00;U20;100;ER-2025-0014;Erdgas Februar - Wien Energie
+05.02.2025;6200;3300;3.120,00;U20;200;ER-2025-0015;Diesel Fuhrpark - OMV Tankstelle
+08.02.2025;7000;3300;85.000,00;U00;600;ER-2025-0016;Loehne Arbeiter Jaenner
+10.02.2025;7010;3300;45.000,00;U00;600;ER-2025-0017;Gehaelter Angestellte Jaenner
+12.02.2025;7200;3300;28.500,00;U00;600;ER-2025-0018;Sozialaufwand Jaenner
+15.02.2025;4000;2000;-125.000,00;U20;700;AR-2025-0001;Umsatzerloese Holzprodukte
+18.02.2025;4010;2000;-35.000,00;U20;700;AR-2025-0002;Umsatzerloese Dienstleistungen
+20.02.2025;6100;3300;4.500,00;U20;100;ER-2025-0019;Miete Betriebsgebaeude
+22.02.2025;6110;3300;1.200,00;U20;100;ER-2025-0020;Betriebskosten Gebaeude
+25.02.2025;6700;3300;3.500,00;U20;100;ER-2025-0021;Rechtsberatung - Freshfields
+28.02.2025;6710;3300;8.000,00;U20;100;ER-2025-0022;Wirtschaftspruefung - BDO Austria
+01.03.2025;6000;3300;13.750,00;U20;100;ER-2025-0023;Strom Maerz - EVN Energieversorgung
+03.03.2025;6010;3300;3.500,00;U20;100;ER-2025-0024;Erdgas Maerz - Wien Energie
+05.03.2025;6200;3300;2.950,00;U20;200;ER-2025-0025;Diesel Fuhrpark - OMV Tankstelle
+08.03.2025;5000;3300;52.000,00;U20;300;ER-2025-0026;Rundholz Einkauf - Binderholz GmbH
+10.03.2025;6400;3300;9.200,00;U20;400;ER-2025-0027;Spedition International - DB Schenker
+12.03.2025;6310;3300;2.100,00;U20;100;ER-2025-0028;Entsorgung Holzabfall - Saubermacher
+15.03.2025;7000;3300;87.500,00;U00;600;ER-2025-0029;Loehne Arbeiter Februar
+18.03.2025;7010;3300;45.000,00;U00;600;ER-2025-0030;Gehaelter Angestellte Februar
+20.03.2025;7200;3300;29.000,00;U00;600;ER-2025-0031;Sozialaufwand Februar
+22.03.2025;7600;3300;2.800,00;U20;100;ER-2025-0032;Dienstreise Wien - Bundesbahn
+25.03.2025;7610;3300;1.450,00;U20;100;ER-2025-0033;Flug Frankfurt - Austrian Airlines
+28.03.2025;6900;3300;15.000,00;U00;100;ER-2025-0034;AfA Maschinen Q1
+30.03.2025;6910;3300;5.000,00;U00;100;ER-2025-0035;AfA Fahrzeuge Q1
+31.03.2025;4000;2000;-145.000,00;U20;700;AR-2025-0003;Umsatzerloese Holzprodukte Q1

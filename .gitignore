@@ -1,0 +1,29 @@
+# Environment
+.env
+*.pyc
+__pycache__/
+.venv/
+venv/
+env/
+
+# Database
+db/*.db
+
+# Output reports (generated)
+output/*.docx
+
+# Processed data
+data/processed/*.csv
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Node (for frontend)
+node_modules/
