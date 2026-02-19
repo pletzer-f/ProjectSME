@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SME Data Intelligence — Dashboard</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+    <style>
+        :root {
+            --primary: #1a56db;
+            --primary-light: #e8edfa;
+            --accent: #059669;
+            --warning: #d97706;
+            --danger: #dc2626;
+            --bg: #f8fafc;
+            --card: #ffffff;
+            --text: #1e293b;
+            --text-muted: #64748b;
+            --border: #e2e8f0;
+            --shadow: 0 1px 3px rgba(0,0,0,0.08), 0 1px 2px rgba(0,0,0,0.04);
+            --shadow-lg: 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -2px rgba(0,0,0,0.1);
+            --radius: 12px;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        /* ─── Header ─── */
+        .header {
+            background: linear-gradient(135deg, #1a365d 0%, #1a56db 100%);
+            color: white;
+            padding: 1rem 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: var(--shadow-lg);
+        }
+        .header h1 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            letter-spacing: -0.025em;
+        }
+        .header .subtitle {
+            font-size: 0.75rem;
+            opacity: 0.8;
+            font-weight: 400;
+        }
+        .header-right {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        .company-select {
+            padding: 0.4rem 0.8rem;
+            border-radius: 8px;
+            border: 1px solid rgba(255,255,255,0.3);
+            background: rgba(255,255,255,0.15);
+            color: white;
+            font-size: 0.85rem;
+            cursor: pointer;
+        }
+        .company-select option { color: var(--text); background: white; }
+        .draft-badge {
+            background: var(--warning);
+            color: white;
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.7rem;
+            font-weight: 700;
+            letter-spacing: 0.05em;
+        }
+
+        /* ─── Layout ─── */
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 1.5rem;
+        }
+
+        /* ─── KPI Cards ─── */
+        .kpi-row {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+        .kpi-card {
+            background: var(--card);
+            border-radius: var(--radius);
+            padding: 1.25rem;
+            box-shadow: var(--shadow);
+            border: 1px solid var(--border);
+        }
+        .kpi-card .label {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--text-muted);
+            margin-bottom: 0.25rem;
+        }
+        .kpi-card .value {
+            font-size: 1.75rem;
+            font-weight: 700;
+            color: var(--text);
+            line-height: 1.2;
+        }
+        .kpi-card .unit {
+            font-size: 0.85rem;
+            font-weight: 400;
+            color: var(--text-muted);
+        }
+        .kpi-card.primary { border-left: 4px solid var(--primary); }
+        .kpi-card.green { border-left: 4px solid var(--accent); }
+        .kpi-card.orange { border-left: 4px solid var(--warning); }
+        .kpi-card.red { border-left: 4px solid var(--danger); }
+
+        /* ─── Section Cards ─── */
+        .section {
+            background: var(--card);
+            border-radius: var(--radius);
+            padding: 1.5rem;
+            box-shadow: var(--shadow);
+            border: 1px solid var(--border);
+            margin-bottom: 1.5rem;
+        }
+        .section h2 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            padding-bottom: 0.75rem;
+            border-bottom: 1px solid var(--border);
+            color: var(--text);
+        }
+
+        /* ─── Grid layouts ─── */
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        .grid-3 {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        @media (max-width: 900px) {
+            .grid-2, .grid-3 { grid-template-columns: 1fr; }
+        }
+
+        /* ─── Scope Bars ─── */
+        .scope-bar {
+            display: flex;
+            align-items: center;
+            margin-bottom: 0.75rem;
+        }
+        .scope-bar .scope-label {
+            width: 100px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: var(--text-muted);
+        }
+        .scope-bar .bar-track {
+            flex: 1;
+            height: 28px;
+            background: #f1f5f9;
+            border-radius: 6px;
+            overflow: hidden;
+            position: relative;
+        }
+        .scope-bar .bar-fill {
+            height: 100%;
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            padding: 0 0.5rem;
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: white;
+            min-width: fit-content;
+            transition: width 0.8s ease;
+        }
+        .scope1-color { background: #ef4444; }
+        .scope2-color { background: #3b82f6; }
+        .scope3-color { background: #8b5cf6; }
+
+        /* ─── Tables ─── */
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.85rem;
+        }
+        .data-table th {
+            text-align: left;
+            padding: 0.6rem 0.75rem;
+            font-weight: 600;
+            color: var(--text-muted);
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            border-bottom: 2px solid var(--border);
+            background: #f8fafc;
+        }
+        .data-table td {
+            padding: 0.6rem 0.75rem;
+            border-bottom: 1px solid var(--border);
+            vertical-align: top;
+        }
+        .data-table tr:hover td { background: #f8fafc; }
+        .data-table .num { text-align: right; font-variant-numeric: tabular-nums; }
+
+        /* ─── Status badges ─── */
+        .badge {
+            display: inline-block;
+            padding: 0.15rem 0.5rem;
+            border-radius: 20px;
+            font-size: 0.7rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.03em;
+        }
+        .badge-met { background: #dcfce7; color: #166534; }
+        .badge-partial { background: #fef9c3; color: #854d0e; }
+        .badge-gap { background: #fee2e2; color: #991b1b; }
+
+        /* ─── Chart containers ─── */
+        .chart-container {
+            position: relative;
+            height: 280px;
+            width: 100%;
+        }
+
+        /* ─── Tabs ─── */
+        .tabs {
+            display: flex;
+            border-bottom: 2px solid var(--border);
+            margin-bottom: 1rem;
+            gap: 0;
+        }
+        .tab {
+            padding: 0.6rem 1.25rem;
+            cursor: pointer;
+            font-size: 0.85rem;
+            font-weight: 500;
+            color: var(--text-muted);
+            border-bottom: 2px solid transparent;
+            margin-bottom: -2px;
+            transition: all 0.2s;
+        }
+        .tab:hover { color: var(--primary); }
+        .tab.active {
+            color: var(--primary);
+            border-bottom-color: var(--primary);
+            font-weight: 600;
+        }
+        .tab-content { display: none; }
+        .tab-content.active { display: block; }
+
+        /* ─── Scrollable table wrapper ─── */
+        .table-wrap {
+            max-height: 500px;
+            overflow-y: auto;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+        }
+        .table-wrap .data-table th {
+            position: sticky;
+            top: 0;
+            z-index: 1;
+            background: #f8fafc;
+        }
+
+        /* ─── Audit trail ─── */
+        .audit-item {
+            padding: 0.5rem 0;
+            border-bottom: 1px solid var(--border);
+            font-size: 0.8rem;
+        }
+        .audit-item:last-child { border-bottom: none; }
+        .audit-item .time {
+            color: var(--text-muted);
+            font-size: 0.7rem;
+        }
+        .audit-item .action {
+            font-weight: 600;
+            color: var(--primary);
+        }
+
+        /* ─── Empty state ─── */
+        .empty-state {
+            text-align: center;
+            padding: 3rem;
+            color: var(--text-muted);
+        }
+        .empty-state h2 { color: var(--text); margin-bottom: 0.5rem; }
+        .empty-state code {
+            background: #f1f5f9;
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+            display: inline-block;
+            margin-top: 0.5rem;
+            font-size: 0.85rem;
+        }
+
+        /* ─── Footer ─── */
+        .footer {
+            text-align: center;
+            padding: 1.5rem;
+            color: var(--text-muted);
+            font-size: 0.75rem;
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <div>
+        <h1>SME Data Intelligence <span class="subtitle">ESG Compliance Dashboard</span></h1>
+    </div>
+    <div class="header-right">
+        {% if companies %}
+        <select class="company-select" onchange="window.location='/?company_id='+this.value">
+            {% for c in companies %}
+            <option value="{{ c.id }}" {% if c.id == active_company_id %}selected{% endif %}>
+                {{ c.name }}{% if c.uid_vat %} ({{ c.uid_vat }}){% endif %}
+            </option>
+            {% endfor %}
+        </select>
+        {% endif %}
+        <span class="draft-badge">DRAFT</span>
+    </div>
+</div>
+
+<div class="container">
+
+{% if not data %}
+<div class="section empty-state">
+    <h2>No Data Available</h2>
+    <p>Run the pipeline first to generate data.</p>
+    <code>python3 run_pipeline.py</code>
+</div>
+{% else %}
+
+<!-- ═══════════ KPI Row ═══════════ -->
+<div class="kpi-row">
+    <div class="kpi-card primary">
+        <div class="label">Total Emissions</div>
+        <div class="value">{{ "%.1f"|format(data.emissions.total) }} <span class="unit">tCO2e</span></div>
+    </div>
+    <div class="kpi-card green">
+        <div class="label">Scope 1 — Direct</div>
+        <div class="value">{{ "%.1f"|format(data.emissions.scope_1) }} <span class="unit">tCO2e</span></div>
+    </div>
+    <div class="kpi-card orange">
+        <div class="label">Scope 2 — Energy</div>
+        <div class="value">{{ "%.1f"|format(data.emissions.scope_2) }} <span class="unit">tCO2e</span></div>
+    </div>
+    <div class="kpi-card red">
+        <div class="label">Scope 3 — Upstream</div>
+        <div class="value">{{ "%.1f"|format(data.emissions.scope_3) }} <span class="unit">tCO2e</span></div>
+    </div>
+    <div class="kpi-card primary">
+        <div class="label">ESRS E1 Compliance</div>
+        <div class="value">{{ data.gap_counts.met }} <span class="unit">of {{ data.gap_analysis|length }} met</span></div>
+    </div>
+    <div class="kpi-card green">
+        <div class="label">Transactions</div>
+        <div class="value">{{ "{:,}".format(data.tx_count) }}</div>
+    </div>
+</div>
+
+<!-- ═══════════ Company Info ═══════════ -->
+<div class="section" style="padding: 0.75rem 1.5rem; margin-bottom: 1rem; display: flex; gap: 2rem; align-items: center; flex-wrap: wrap;">
+    <div><strong>{{ data.company.name }}</strong></div>
+    {% if data.company.uid_vat %}<div style="color:var(--text-muted); font-size: 0.85rem;">UID: {{ data.company.uid_vat }}</div>{% endif %}
+    {% if data.company.nace_code %}<div style="color:var(--text-muted); font-size: 0.85rem;">NACE: {{ data.company.nace_code }}</div>{% endif %}
+    {% if data.company.size_employees %}<div style="color:var(--text-muted); font-size: 0.85rem;">{{ data.company.size_employees }} Employees</div>{% endif %}
+    <div style="color:var(--text-muted); font-size: 0.85rem;">Period: {{ data.period }}</div>
+    <div style="color:var(--text-muted); font-size: 0.85rem;">Revenue: EUR {{ "{:,.0f}".format(data.total_revenue) }} | Expenses: EUR {{ "{:,.0f}".format(data.total_expenses) }}</div>
+</div>
+
+<!-- ═══════════ Charts Row ═══════════ -->
+<div class="grid-3">
+    <!-- Scope Breakdown Donut -->
+    <div class="section">
+        <h2>Emissions by Scope</h2>
+        <div class="chart-container">
+            <canvas id="scopeChart"></canvas>
+        </div>
+    </div>
+
+    <!-- Category Breakdown Bar -->
+    <div class="section">
+        <h2>Emissions by Category</h2>
+        <div class="chart-container">
+            <canvas id="categoryChart"></canvas>
+        </div>
+    </div>
+
+    <!-- Scope Bars + Summary -->
+    <div class="section">
+        <h2>Scope Breakdown</h2>
+        {% set max_scope = [data.emissions.scope_1, data.emissions.scope_2, data.emissions.scope_3]|max %}
+        {% if max_scope > 0 %}
+        <div class="scope-bar">
+            <div class="scope-label">Scope 1</div>
+            <div class="bar-track">
+                <div class="bar-fill scope1-color" style="width: {{ (data.emissions.scope_1 / max_scope * 100)|round(1) }}%">
+                    {{ "%.1f"|format(data.emissions.scope_1) }} tCO2e
+                </div>
+            </div>
+        </div>
+        <div class="scope-bar">
+            <div class="scope-label">Scope 2</div>
+            <div class="bar-track">
+                <div class="bar-fill scope2-color" style="width: {{ (data.emissions.scope_2 / max_scope * 100)|round(1) }}%">
+                    {{ "%.1f"|format(data.emissions.scope_2) }} tCO2e
+                </div>
+            </div>
+        </div>
+        <div class="scope-bar">
+            <div class="scope-label">Scope 3</div>
+            <div class="bar-track">
+                <div class="bar-fill scope3-color" style="width: {{ (data.emissions.scope_3 / max_scope * 100)|round(1) }}%">
+                    {{ "%.1f"|format(data.emissions.scope_3) }} tCO2e
+                </div>
+            </div>
+        </div>
+        {% endif %}
+
+        <div style="margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--border);">
+            <div style="font-size: 0.8rem; color: var(--text-muted); margin-bottom: 0.5rem;">Intensity Metrics</div>
+            {% if data.company.size_employees and data.company.size_employees > 0 %}
+            <div style="font-size: 0.85rem; margin-bottom: 0.25rem;">
+                <strong>{{ "%.2f"|format(data.emissions.total / data.company.size_employees) }}</strong>
+                <span style="color: var(--text-muted);">tCO2e / employee</span>
+            </div>
+            {% endif %}
+            {% if data.total_revenue > 0 %}
+            <div style="font-size: 0.85rem;">
+                <strong>{{ "%.1f"|format(data.emissions.total / data.total_revenue * 1000000) }}</strong>
+                <span style="color: var(--text-muted);">tCO2e / EUR 1M revenue</span>
+            </div>
+            {% endif %}
+        </div>
+    </div>
+</div>
+
+<!-- ═══════════ Gap Analysis ═══════════ -->
+<div class="section">
+    <h2>ESRS E1 Gap Analysis — {{ data.gap_counts.met }} Met | {{ data.gap_counts.partial }} Partial | {{ data.gap_counts.gap }} Gap</h2>
+    <div class="table-wrap">
+    <table class="data-table">
+        <thead>
+            <tr>
+                <th style="width: 80px;">Ref</th>
+                <th>Disclosure Requirement</th>
+                <th style="width: 90px;">Status</th>
+                <th>Notes / Gap Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for g in data.gap_analysis %}
+            <tr>
+                <td><strong>{{ g.ref }}</strong></td>
+                <td>{{ g.title }}</td>
+                <td>
+                    <span class="badge badge-{{ g.status }}">{{ g.status|upper }}</span>
+                </td>
+                <td style="font-size: 0.8rem; color: var(--text-muted);">{{ g.gap_notes or '—' }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    </div>
+</div>
+
+<!-- ═══════════ Detailed Tabs ═══════════ -->
+<div class="section">
+    <div class="tabs">
+        <div class="tab active" onclick="switchTab(event, 'tab-emissions')">Emission Details</div>
+        <div class="tab" onclick="switchTab(event, 'tab-mappings')">Account Mappings ({{ data.mappings|length }})</div>
+        <div class="tab" onclick="switchTab(event, 'tab-spend')">Spend by Category</div>
+        <div class="tab" onclick="switchTab(event, 'tab-reports')">Reports</div>
+        <div class="tab" onclick="switchTab(event, 'tab-audit')">Audit Trail</div>
+    </div>
+
+    <!-- Emission Details -->
+    <div id="tab-emissions" class="tab-content active">
+        <div class="table-wrap">
+        <table class="data-table">
+            <thead>
+                <tr>
+                    <th>Scope</th>
+                    <th>Category</th>
+                    <th>Quantity</th>
+                    <th>Unit</th>
+                    <th>Factor</th>
+                    <th>Source</th>
+                    <th class="num">tCO2e</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for e in data.emissions.details %}
+                <tr>
+                    <td><span class="badge" style="background: {% if e.scope == 1 %}#fee2e2; color: #991b1b{% elif e.scope == 2 %}#dbeafe; color: #1e40af{% else %}#ede9fe; color: #5b21b6{% endif %}">Scope {{ e.scope }}</span></td>
+                    <td>{{ e.category }}</td>
+                    <td class="num">{{ "{:,.1f}".format(e.quantity) }}</td>
+                    <td>{{ e.unit }}</td>
+                    <td>{{ e.emission_factor_used }}</td>
+                    <td style="font-size: 0.75rem; color: var(--text-muted);">{{ e.factor_source }}</td>
+                    <td class="num"><strong>{{ "%.4f"|format(e.value_tco2e) }}</strong></td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        </div>
+    </div>
+
+    <!-- Account Mappings -->
+    <div id="tab-mappings" class="tab-content">
+        <div class="table-wrap">
+        <table class="data-table">
+            <thead>
+                <tr>
+                    <th>Account</th>
+                    <th>Name</th>
+                    <th>ESG Category</th>
+                    <th>Confidence</th>
+                    <th>Source</th>
+                    <th class="num">Spend (EUR)</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for m in data.mappings %}
+                <tr>
+                    <td><strong>{{ m.account_number }}</strong></td>
+                    <td>{{ m.account_name }}</td>
+                    <td>{{ m.esg_category }}</td>
+                    <td>
+                        {% if m.confidence_score %}
+                        <span style="color: {% if m.confidence_score >= 0.9 %}var(--accent){% elif m.confidence_score >= 0.7 %}var(--warning){% else %}var(--danger){% endif %}">
+                            {{ "%.0f"|format(m.confidence_score * 100) }}%
+                        </span>
+                        {% else %}—{% endif %}
+                    </td>
+                    <td style="font-size: 0.75rem; color: var(--text-muted);">{{ m.source or '—' }}</td>
+                    <td class="num">{{ "{:,.2f}".format(m.spend_eur) }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        </div>
+    </div>
+
+    <!-- Spend by Category -->
+    <div id="tab-spend" class="tab-content">
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;">
+            <div class="chart-container" style="height: 350px;">
+                <canvas id="spendChart"></canvas>
+            </div>
+            <div class="table-wrap" style="max-height: 350px;">
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Category</th>
+                            <th class="num">Spend (EUR)</th>
+                            <th class="num">% of Total</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% set total_cat_spend = data.category_spend.values()|sum %}
+                        {% for cat, spend in data.category_spend.items()|sort(attribute='1', reverse=true) %}
+                        <tr>
+                            <td>{{ cat }}</td>
+                            <td class="num">{{ "{:,.0f}".format(spend) }}</td>
+                            <td class="num">{{ "%.1f"|format(spend / total_cat_spend * 100 if total_cat_spend else 0) }}%</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- Reports -->
+    <div id="tab-reports" class="tab-content">
+        {% if data.reports %}
+        <table class="data-table">
+            <thead>
+                <tr>
+                    <th>Type</th>
+                    <th>Version</th>
+                    <th>Generated</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for r in data.reports %}
+                <tr>
+                    <td>{{ r.report_type }}</td>
+                    <td>v{{ r.version }}</td>
+                    <td>{{ r.generated_at[:19] if r.generated_at else '—' }}</td>
+                    <td><span class="badge badge-{{ 'met' if r.status == 'draft' else 'partial' }}">{{ r.status|upper }}</span></td>
+                    <td><a href="/download-report/{{ r.id }}" style="color: var(--primary); text-decoration: none; font-weight: 600;">Download .docx</a></td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        {% else %}
+        <p style="color: var(--text-muted); padding: 1rem 0;">No reports generated yet.</p>
+        {% endif %}
+    </div>
+
+    <!-- Audit Trail -->
+    <div id="tab-audit" class="tab-content">
+        <div style="max-height: 400px; overflow-y: auto;">
+            {% for a in data.audit_log %}
+            <div class="audit-item">
+                <span class="time">{{ a.timestamp[:19] if a.timestamp else '' }}</span>
+                <span class="action">{{ a.action }}</span>
+                <span style="color: var(--text-muted);">{{ a.entity_type or '' }}</span>
+                <br>
+                <span style="font-size: 0.75rem; color: var(--text-muted);">{{ a.details or '' }}</span>
+            </div>
+            {% endfor %}
+            {% if not data.audit_log %}
+            <p style="color: var(--text-muted); padding: 1rem 0;">No audit entries yet.</p>
+            {% endif %}
+        </div>
+    </div>
+</div>
+
+<!-- ═══════════ Monthly Spend Chart ═══════════ -->
+{% if data.monthly_spend %}
+<div class="section">
+    <h2>Monthly Financial Overview</h2>
+    <div class="chart-container" style="height: 300px;">
+        <canvas id="monthlyChart"></canvas>
+    </div>
+</div>
+{% endif %}
+
+{% endif %} <!-- end if data -->
+
+</div>
+
+<div class="footer">
+    SME Data Intelligence Platform — DRAFT — All reports require human review before submission
+</div>
+
+<script>
+function switchTab(event, tabId) {
+    document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+    document.querySelectorAll('.tab-content').forEach(t => t.classList.remove('active'));
+    event.target.classList.add('active');
+    document.getElementById(tabId).classList.add('active');
+
+    // Trigger chart resize for spend tab
+    if (tabId === 'tab-spend' && window.spendChartInstance) {
+        setTimeout(() => window.spendChartInstance.resize(), 50);
+    }
+}
+
+{% if data %}
+// ─── Scope Donut Chart ───
+const scopeCtx = document.getElementById('scopeChart').getContext('2d');
+new Chart(scopeCtx, {
+    type: 'doughnut',
+    data: {
+        labels: ['Scope 1 — Direct', 'Scope 2 — Energy', 'Scope 3 — Upstream'],
+        datasets: [{
+            data: [{{ data.emissions.scope_1 }}, {{ data.emissions.scope_2 }}, {{ data.emissions.scope_3 }}],
+            backgroundColor: ['#ef4444', '#3b82f6', '#8b5cf6'],
+            borderWidth: 2,
+            borderColor: '#ffffff',
+        }]
+    },
+    options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+            legend: { position: 'bottom', labels: { font: { size: 11 }, padding: 12 } },
+            tooltip: {
+                callbacks: {
+                    label: function(ctx) {
+                        return ctx.label + ': ' + ctx.raw.toFixed(2) + ' tCO2e';
+                    }
+                }
+            }
+        },
+        cutout: '55%',
+    }
+});
+
+// ─── Category Bar Chart ───
+const catData = {{ data.emissions.by_category|tojson }};
+const catLabels = Object.keys(catData);
+const catValues = Object.values(catData);
+const catColors = catLabels.map(l => {
+    if (l.includes('gas') || l.includes('fuel')) return '#ef4444';
+    if (l.includes('electric')) return '#3b82f6';
+    return '#8b5cf6';
+});
+
+const catCtx = document.getElementById('categoryChart').getContext('2d');
+new Chart(catCtx, {
+    type: 'bar',
+    data: {
+        labels: catLabels,
+        datasets: [{
+            label: 'tCO2e',
+            data: catValues,
+            backgroundColor: catColors,
+            borderRadius: 6,
+        }]
+    },
+    options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: { legend: { display: false } },
+        scales: {
+            y: { beginAtZero: true, title: { display: true, text: 'tCO2e' } },
+            x: { ticks: { maxRotation: 45, font: { size: 10 } } }
+        }
+    }
+});
+
+// ─── Spend Pie Chart ───
+const spendData = {{ data.category_spend|tojson }};
+const spendLabels = Object.keys(spendData);
+const spendValues = Object.values(spendData);
+const spendColors = [
+    '#3b82f6', '#ef4444', '#10b981', '#f59e0b', '#8b5cf6',
+    '#ec4899', '#06b6d4', '#84cc16', '#f97316', '#6366f1',
+    '#14b8a6', '#e11d48', '#a855f7', '#0ea5e9', '#65a30d',
+    '#d946ef', '#0891b2',
+];
+
+const spendCtx = document.getElementById('spendChart');
+if (spendCtx) {
+    window.spendChartInstance = new Chart(spendCtx.getContext('2d'), {
+        type: 'doughnut',
+        data: {
+            labels: spendLabels,
+            datasets: [{
+                data: spendValues,
+                backgroundColor: spendColors.slice(0, spendLabels.length),
+                borderWidth: 1,
+                borderColor: '#ffffff',
+            }]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+                legend: { position: 'right', labels: { font: { size: 10 }, padding: 8 } },
+                tooltip: {
+                    callbacks: {
+                        label: function(ctx) {
+                            return ctx.label + ': EUR ' + ctx.raw.toLocaleString('de-AT', {minimumFractionDigits: 0});
+                        }
+                    }
+                }
+            },
+            cutout: '40%',
+        }
+    });
+}
+
+// ─── Monthly Chart ───
+const monthlySpend = {{ data.monthly_spend|tojson }};
+const monthlyRevenue = {{ data.monthly_revenue|tojson }};
+const allMonths = [...new Set([...Object.keys(monthlySpend), ...Object.keys(monthlyRevenue)])].sort();
+
+const monthlyCtx = document.getElementById('monthlyChart');
+if (monthlyCtx) {
+    new Chart(monthlyCtx.getContext('2d'), {
+        type: 'bar',
+        data: {
+            labels: allMonths,
+            datasets: [
+                {
+                    label: 'Revenue (EUR)',
+                    data: allMonths.map(m => monthlyRevenue[m] || 0),
+                    backgroundColor: '#10b981',
+                    borderRadius: 4,
+                },
+                {
+                    label: 'Expenses (EUR)',
+                    data: allMonths.map(m => monthlySpend[m] || 0),
+                    backgroundColor: '#ef4444',
+                    borderRadius: 4,
+                },
+            ]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: { legend: { position: 'top' } },
+            scales: {
+                y: {
+                    beginAtZero: true,
+                    ticks: {
+                        callback: function(v) { return 'EUR ' + (v/1000).toFixed(0) + 'k'; }
+                    }
+                },
+                x: { ticks: { font: { size: 10 } } }
+            }
+        }
+    });
+}
+{% endif %}
+</script>
+
+</body>
+</html>
